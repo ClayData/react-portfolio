@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Art-Tour",
+        "github": "https://github.com/ClayData/art-tour",
+        "site": "https://art-tour.herokuapp.com/",
+        "image": "#"
+    },
+    {   
+        "id": 2,
+        "name": "Finn-Dash",
+        "github": "https://github.com/ClayData/art-tour",
+        "site": "https://art-tour.herokuapp.com/",
+        "image": "#"
+    },
+    {   
+        "id": 3,
+        "name": "Workout Tracker",
+        "github": "https://github.com/ClayData/art-tour",
+        "site": "https://art-tour.herokuapp.com/",
+        "image": "#"
+    },
+    {   
+        "id": 4,
+        "name": "Budget Tracker",
+        "github": "https://github.com/ClayData/art-tour",
+        "site": "https://art-tour.herokuapp.com/",
+        "image": "#"
+    },
+    {   
+        "id": 5,
+        "name": "Restaurant Locator",
+        "github": "https://github.com/ClayData/art-tour",
+        "site": "https://art-tour.herokuapp.com/",
+        "image": "#"
+    },
+    {   
+        "id": 6,
+        "name": "Employee Tracker",
+        "github": "https://github.com/ClayData/art-tour",
+        "site": "https://art-tour.herokuapp.com/",
+        "image": "#"
+    }
+]
