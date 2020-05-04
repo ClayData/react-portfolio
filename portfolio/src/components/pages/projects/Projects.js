@@ -19,7 +19,7 @@ class Projects extends React.Component {
                     image={project.image}
                     name={project.name}
                     site={project.site}
-                    gitube={project.github}
+                    github={project.github}
                     />
                 ))}
                 
