@@ -16,6 +16,9 @@ function NavBar() {
                     Projects
                 </Link>
             </li>
+            <li className="nav-item">
+                <a href="mailto:claytonortiz96@gmail.com" className="nav-link">Contact</a>
+            </li>
         </ul>
         <span className="navbar-text"> 
             Clayton Ortiz
