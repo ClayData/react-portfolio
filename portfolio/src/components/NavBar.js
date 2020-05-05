@@ -4,7 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 function NavBar() {
     const location = useLocation();
     return(
-    <ul className="nav nav-tabs">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul className="navbar-nav mr-auto">
             <li className="nav-item">
                 <Link to="/about" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
                     About
@@ -16,6 +17,11 @@ function NavBar() {
                 </Link>
             </li>
         </ul>
+        <span className="navbar-text"> 
+            Clayton Ortiz
+        </span>
+
+    </nav>
     )
 }
 
