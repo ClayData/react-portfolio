@@ -1,8 +1,10 @@
 import React from 'react';
-import Card from './Card';
-import data from './projectData.json';
+import { Grid } from '@material-ui/core';
+import ProjectCard from './ProjectCard';
 import Wrapper from './Wrapper';
-import './Projects.css';
+import data from './projectData.json';
+
+
 
 
 class Projects extends React.Component {
@@ -15,25 +17,26 @@ class Projects extends React.Component {
 
     render() {
         return(
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-1"></div>
-                        <div className="col">
-                            <Wrapper>
-                            {this.state.info.map(project => (
-                                <Card 
+            <Grid container>
+                <Grid item xs={2} />
+
+                <Grid item xs={8}>
+                    <Wrapper>
+                        {data.map((project) => {
+                            return (
+                                <ProjectCard 
+                                name={project.name}
                                 key={project.id}
                                 image={project.image}
-                                name={project.name}
-                                site={project.site}
-                                github={project.github}
+
                                 />
-                            ))}
-                            </Wrapper>     
-                        </div>
-                    <div className="col-1"></div>
-                </div>       
-            </div>
+                            )
+                        })}
+                    </Wrapper>
+                </Grid>
+
+                <Grid item xs={2} />
+            </Grid>
         )
     }
 }

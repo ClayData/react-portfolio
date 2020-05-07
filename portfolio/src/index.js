@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import blueGrey from '@material-ui/core/colors/blueGrey'
 
 import App from './App';
 
+const theme = createMuiTheme({
+  palette: {
+    primary: blueGrey,
+  },
+});
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ThemeProvider theme={theme}>
     <App />
-  </React.StrictMode>,
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

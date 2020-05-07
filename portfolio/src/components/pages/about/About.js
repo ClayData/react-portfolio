@@ -1,30 +1,72 @@
 import React from 'react';
-import './About.css';
+import { makeStyles } from '@material-ui/core/styles';
+import { Card, CardContent, Typography, Grid, Paper, CardMedia }from '@material-ui/core';
+import Image from '../../assets/aboutpic.jpg';
+
+
+const useStyles = makeStyles({
+    root: {
+      marginTop: '1rem',
+      minWidth: 275,
+    },
+    media: 
+    {
+      height: 0,
+      paddingTop: '56.25%',
+    },
+    title: {
+      fontSize: '2rem',
+    },
+    body: {
+      fontSize: '1rem'
+    },
+    paper: {
+        alignSelf: 'center',
+        textAlign: 'center'
+    }
+  });
 
 function About() {
+   const classes = useStyles();
+   
+
     return(
-    <div className="container-full">
-        <div className="row">
-            <div className="col"></div>
-                <div className="col">
-                    <div className="card mb-3" style={{maxWidth: '540px'}}>
-                        <div className="row no-gutters">
-                            <div className="col-md-4">
-                            <img src="#" className="card-img" alt="Clayton Ortiz" />
-                            </div>
-                            <div className="col-md-8">
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div className="col"></div>
-        </div>
-    </div>
+        <Grid container >
+            <Grid item xs={2}>
+
+            </Grid>
+            <Grid item xs={4}>
+                <Card className={classes.root}>
+                    <CardMedia 
+                    className={classes.media}
+                    title='Clayton Ortiz'
+                    image={Image}
+                    />
+                    Hello
+                </Card>
+            </Grid>
+            <Grid item xs={4}>
+                <Paper className={classes.paper}>
+                    <Card className={classes.root}>
+                        <CardContent>
+                            <Typography className={classes.title}>
+                                About Me
+                            </Typography>
+                            <Typography className={classes.body}>
+                            Full Stack Web Developer passionate about building responsive and robust web applications. 
+                            Educated at the University of Minnesota Twin-Cities, obtaining a certificate in Full-Stack Web Development and a B.S. in Applied Economics. Skilled in web technologies including HTML, CSS, JavaScript, Node.js and React. Experience utilizing both SQL and NoSql databases. 
+                            Created a full stack web application to simulate a tour of the NY Met Museum. The combination of my technical skills and ability to collaborate in a deadline-driven environment make me a strong addition to all kinds of development teams. 
+                            I am excited to work on and solve new challenges everyday. My belief is to always be striving to learn and improve so I become an even better developer. 
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Paper>
+            </Grid>
+            <Grid item xs={2}>
+
+            </Grid>
+        </Grid>
+        
     )
 }
 
