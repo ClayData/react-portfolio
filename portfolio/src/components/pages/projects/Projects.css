@@ -1,29 +1,3 @@
-.container-fluid{
-    background: #ECEFF1;
-    width: 100%;
-    height: 100vh;
+.root{
+    background-color: rgb(56, 199, 209);
 }
-
-.row{
-    height: 100vh;
-}
-
-.card{
-    width: 400px;
-    border-radius: 2px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-    margin: 1rem;
-    position: relative;
-
-}
-
-.card > .img-container {
-    height: 60%;
-    overflow: hidden;
-    text-align: center;
-    background:#6CADDC;
-  }
-
-  .card > .img-container > img {
-    width: 60%
-  }

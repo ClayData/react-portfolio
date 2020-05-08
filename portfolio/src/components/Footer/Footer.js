@@ -7,7 +7,10 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 const useStyles = makeStyles({
   root: {
     width: 500,
-    margin: 'auto'
+    margin: 'auto',
+  },
+  footer: {
+    borderTop: '1px solid slategray',
   },
 });
 
@@ -18,7 +21,7 @@ export default function Footer() {
   return (
     <Grid container>
       
-        <Grid item xs={12}>
+        <Grid item xs={12} className={classes.footer}>
           <Paper elevation={0}>
             <BottomNavigation
               value={value}

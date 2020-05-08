@@ -1,12 +1,15 @@
 .wrapper {
     padding-top: 50px;
     background: linear-gradient(to left bottom, rgb(10, 34, 57, .8), rgb(98, 117, 139, .8)), url('../../assets/minneapolis_skyline.jpg');
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-flow: row wrap;
+    padding-top: 4rem;
     padding: 20px;
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
     box-shadow: -10px 0 8px -8px black, 10px 0 8px -8px black;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
   }

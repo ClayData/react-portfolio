@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import Wrapper from './Wrapper';
 import data from './projectData.json';
 
+import './Projects.css'
 
 
 
@@ -15,9 +16,11 @@ class Projects extends React.Component {
     }
 }
 
+    
+
     render() {
         return(
-            <Grid container>
+            <Grid container className='root'>
                 <Grid item xs={2} />
 
                 <Grid item xs={8}>
