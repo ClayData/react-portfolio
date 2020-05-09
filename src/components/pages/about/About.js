@@ -6,8 +6,7 @@ import './About.css';
 const useStyles = makeStyles({
     root:{
         backgroundColor: 'rgb(56, 199, 209)',
-        minHeight: '47rem',
-        
+        minHeight: '47rem',  
     },
     card: {
       margin: '2rem',
@@ -37,7 +36,7 @@ function About() {
             <Grid container spacing={2}>
                 <Grid item xs={2}></Grid>
                     <Grid item xs={8}>
-                        <Paper className='holder'>
+                        <Paper className='holder' elevation={5}>
                             <Card className={classes.card}>
                                 <CardContent>
                                     <Typography className={classes.title}>
