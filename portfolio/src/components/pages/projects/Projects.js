@@ -31,7 +31,8 @@ class Projects extends React.Component {
                                 name={project.name}
                                 key={project.id}
                                 image={project.image}
-
+                                github={project.github}
+                                site={project.site}
                                 />
                             )
                         })}

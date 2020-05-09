@@ -5,6 +5,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button';
 
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Popout() {
+export default function Popout(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -48,8 +49,10 @@ export default function Popout() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
+            <h2>{props.name}</h2>
+            <p>react-transition-group animates me.</p>
+            <Button href={props.github}>GitHub</Button>
+            <Button href={props.site}>LiveSite</Button>
           </div>
         </Fade>
       </Modal>

@@ -37,7 +37,11 @@ function ProjectCard(props){
                 </Typography>
             </CardContent>
             <CardActions>
-                <Popout />
+                <Popout
+                name={props.name}
+                github={props.github}
+                site={props.site}
+                />
             </CardActions>
         </Card>
     )
