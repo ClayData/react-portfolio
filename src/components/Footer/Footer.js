@@ -31,8 +31,8 @@ export default function Footer() {
               showLabels
               className={classes.root}
             >
-              <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/in/clayton-ortiz-844340108/" target="_blank" />
-              <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/ClayData" target="_blank"/>
+              <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/in/clayton-ortiz-844340108/"  />
+              <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/ClayData" />
               <BottomNavigationAction label="Email" icon={<MailOutlineIcon />} href="mailto:claytonortiz96@gmail.com"/>
             </BottomNavigation>
           </Paper>

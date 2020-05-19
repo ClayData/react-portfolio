@@ -48,7 +48,6 @@ export default function MenuButton() {
         <MenuItem onClick={handleClose}>
         <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1twz4VAeTmXRg2l4HSdKbrvz8iKt4rV_YuPWSHY27Nnc/export?format=pdf" 
            className="nav-link"
-           target="_blank"
           >Resume</a>
         </MenuItem>
       </Menu>

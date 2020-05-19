@@ -8,36 +8,15 @@
     },
     {   
         "id": 2,
-        "name": "Finn-Dash",
-        "github": "https://github.com/ClayData/finance-dashboard",
-        "site": "https://art-tour.herokuapp.com/",
+        "name": "Book-Zelf",
+        "github": "https://github.com/ClayData/book-search",
+        "site": "https://book-zelf.herokuapp.com/",
         "image": "#"
     },
     {   
         "id": 3,
-        "name": "Workout Tracker",
-        "github": "https://github.com/ClayData/workout-tracker",
-        "site": "#",
-        "image": "#"
-    },
-    {   
-        "id": 4,
-        "name": "Budget Tracker",
-        "github": "https://github.com/ClayData/budget-tracker",
-        "site": "#",
-        "image": "#"
-    },
-    {   
-        "id": 5,
-        "name": "Restaurant Locator",
-        "github": "https://github.com/ClayData/project-1",
-        "site": "https://claydata.github.io/project-1/",
-        "image": "#"
-    },
-    {   
-        "id": 6,
-        "name": "Employee Tracker",
-        "github": "https://github.com/ClayData/employee-tracker",
+        "name": "Workout Buddy",
+        "github": "https://github.com/ClayData/workout-buddy",
         "site": "#",
         "image": "#"
     }
