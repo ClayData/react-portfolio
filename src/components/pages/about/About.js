@@ -1,11 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardContent, Typography, Grid, Paper}from '@material-ui/core';
+import Projects from '../projects/Projects';
 import './About.css';
 
 const useStyles = makeStyles({
     root:{
-        backgroundColor: 'rgb(56, 199, 209)',
+        background: "rgb(34,193,195)",
+        background: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(35,191,198,1) 40%, rgba(45,164,253,1) 100%)",
         minHeight: '47rem',  
     },
     card: {
@@ -33,6 +35,7 @@ function About() {
 
     return(
         <div className={classes.root}>
+            <Projects />
             <Grid container spacing={2}>
                 <Grid item xs={2}></Grid>
                     <Grid item xs={8}>

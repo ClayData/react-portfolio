@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     root: {
       marginTop: '1rem',
       minWidth: 275,
-      maxWidth: 500,
+      maxWidth: 275,
     },
     media: 
     {
@@ -34,6 +34,9 @@ function ProjectCard(props){
             <CardContent>
                 <Typography className={classes.title}>
                     {props.name}
+                </Typography>
+                <Typography>
+                  {props.description}
                 </Typography>
             </CardContent>
             <CardActions>

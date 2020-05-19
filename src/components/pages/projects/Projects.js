@@ -1,10 +1,10 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import ProjectCard from './ProjectCard';
 import Wrapper from './Wrapper';
 import data from './projectData.json';
 
-import './Projects.css'
+// import './Projects.css'
 
 
 
@@ -33,6 +33,7 @@ class Projects extends React.Component {
                                 image={project.image}
                                 github={project.github}
                                 site={project.site}
+                                description={project.description}
                                 />
                             )
                         })}

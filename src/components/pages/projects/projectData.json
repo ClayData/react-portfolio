@@ -4,6 +4,7 @@
         "name": "Art-Tour",
         "github": "https://github.com/ClayData/art-tour",
         "site": "https://art-tour.herokuapp.com/",
+        "description": "Take a virtual art tour of the New York Met and create your own custom virtual art galleries",
         "image": "https://github.com/ClayData/art-tour/blob/master/images/art_tour.png?raw=true"
     },
     {   
@@ -11,12 +12,14 @@
         "name": "Book-Zelf",
         "github": "https://github.com/ClayData/book-search",
         "site": "https://book-zelf.herokuapp.com/",
+        "description": "Search the Google Books API for your next favorite read",
         "image": "#"
     },
     {   
         "id": 3,
         "name": "Workout Buddy",
         "github": "https://github.com/ClayData/workout-buddy",
+        "description": "Create your own quick at home workouts and work up a sweat with Workout-Buddy",
         "site": "#",
         "image": "#"
     }
