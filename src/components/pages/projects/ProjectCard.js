@@ -17,7 +17,7 @@ const useStyles = makeStyles({
       fontSize: '1.5rem',
     },
     body: {
-      fontSize: '1rem'
+      fontSize: '1rem',
     },
   });
 

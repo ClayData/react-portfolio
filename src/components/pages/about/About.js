@@ -1,18 +1,20 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, Typography, Grid, Paper}from '@material-ui/core';
+import { Card, CardContent, Typography, Grid}from '@material-ui/core';
 import Projects from '../projects/Projects';
+import Holder from './Holder'
 import './About.css';
 
 const useStyles = makeStyles({
     root:{
-        background: "rgb(34,193,195)",
+        
         background: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(35,191,198,1) 40%, rgba(45,164,253,1) 100%)",
         minHeight: '47rem',  
     },
     card: {
       margin: '2rem',
       minWidth: 275,
+      background: "rgb(244, 247, 249)"
     },
     media: {
       height: 0,
@@ -39,7 +41,7 @@ function About() {
             <Grid container spacing={2}>
                 <Grid item xs={2}></Grid>
                     <Grid item xs={8}>
-                        <Paper className='holder' elevation={5}>
+                        <Holder className={classes.holder}>
                             <Card className={classes.card}>
                                 <CardContent>
                                     <Typography className={classes.title}>
@@ -49,7 +51,7 @@ function About() {
                                     I am a Full Stack Web Developer passionate about building web applications. 
                                     Educated at the University of Minnesota Twin-Cities, obtaining a certificate in Full-Stack Web Development and a B.S. in Applied Economics. 
                                     I’m skilled in web technologies including HTML, CSS, JavaScript, Node.js and React. 
-                                    My experiences with databases include both SQL and NoSql variates. 
+                                    My experiences with databases include both SQL and NoSQL variates. 
                                     The combination of my technical skills and ability to collaborate in a deadline-driven environment make me a strong addition to all kinds of development teams. I am excited to work on and solve new challenges everyday. 
                                     
                                     </Typography>
@@ -59,7 +61,7 @@ function About() {
                                     </Typography>
                                 </CardContent>
                             </Card>
-                            </Paper>
+                            </Holder>
                         </Grid>
                     <Grid item xs={2}></Grid>
                 </Grid>

@@ -12,7 +12,7 @@
         "name": "Book-Zelf",
         "github": "https://github.com/ClayData/book-search",
         "site": "https://book-zelf.herokuapp.com/",
-        "description": "Search the Google Books API for your next favorite read",
+        "description": "Search the Google Books API for your next favorite read and save it to your bookshelf",
         "image": "#"
     },
     {   

@@ -3,14 +3,18 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Link, useLocation } from "react-router-dom";
+import { makeStyles } from '@material-ui/core/styles';
 
-
+const useStyles = makeStyles({
+  link: {
+    color: 'black',
+    textDecoration: 'none'
+  }
+})
 
 export default function MenuButton() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const location = useLocation();
+  const classes = useStyles();
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -33,21 +37,17 @@ export default function MenuButton() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link to="/about" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-            About
-          </Link>
+        <a href="https://github.com/ClayData" className={classes.link}>GitHub</a>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link to="/projects" className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}>
-            Projects
-          </Link>
-        </MenuItem>
+        <a href="https://www.linkedin.com/in/clayton-ortiz-844340108/" className={classes.link}>LinkedIn</a>
+        </MenuItem> 
         <MenuItem onClick={handleClose}>
-        <a href="mailto:claytonortiz96@gmail.com" className="nav-link">Contact</a>
+        <a href="mailto:claytonortiz96@gmail.com" className={classes.link}>Contact</a>
         </MenuItem>
         <MenuItem onClick={handleClose}>
         <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1twz4VAeTmXRg2l4HSdKbrvz8iKt4rV_YuPWSHY27Nnc/export?format=pdf" 
-           className="nav-link"
+           className={classes.link}
           >Resume</a>
         </MenuItem>
       </Menu>
