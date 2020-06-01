@@ -1,3 +1,1 @@
-Portfolio site built with React and Material-UI, dont really like how it turned out and going to make a new one. I will keep some parts of it but want to try a different style that I did not decide on until too late. This portfolio has a projects and about page. 
-
-https://clayton-portfolio.herokuapp.com/
+This is my personal portfolio site built with React and Material-Ui. It is all on a single page and contains a projects and about section. I am using Google Firebase to host the site. There is no database associated with the site, any data used is from a small JSON file. 
