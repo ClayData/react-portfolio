@@ -7,10 +7,6 @@ import data from './projectData.json';
 import "./Wrapper.css";
 
 
-
-
-
-
 class Projects extends React.Component {
     constructor(props){
     super(props);
@@ -51,6 +47,7 @@ class Projects extends React.Component {
                                     github={project.github}
                                     site={project.site}
                                     description={project.description}
+                                    tech={project.tech}
                                     />
                                 </motion.div>    
                                 )

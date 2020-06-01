@@ -44,6 +44,7 @@ function ProjectCard(props){
                 name={props.name}
                 github={props.github}
                 site={props.site}
+                tech={props.tech}
                 />
             </CardActions>
         </Card>

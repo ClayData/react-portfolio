@@ -5,7 +5,8 @@
         "github": "https://github.com/ClayData/art-tour",
         "site": "https://art-tour.herokuapp.com/",
         "description": "Take a virtual art tour of the New York Met and create your own custom virtual art galleries",
-        "image": "https://github.com/ClayData/art-tour/blob/master/images/art_tour.png?raw=true"
+        "image": "https://github.com/ClayData/art-tour/blob/master/images/art_tour.png?raw=true",
+        "tech": ["jQuery", "bootstrap", "MySql", "Express", "Node", "Sequelize"]
     },
     {   
         "id": 2,
@@ -13,7 +14,8 @@
         "github": "https://github.com/ClayData/book-search",
         "site": "https://book-zelf.herokuapp.com/",
         "description": "Search the Google Books API for your next favorite read and save it to your bookshelf",
-        "image": "https://github.com/ClayData/book-search/blob/master/client/src/images/searchpage.png?raw=true"
+        "image": "https://github.com/ClayData/book-search/blob/master/client/src/images/searchpage.png?raw=true",
+        "tech": ["React", "Material-Ui", "MongoDB", "Express", "Node", "Google Books API", "Mongoose"]
     },
     {   
         "id": 3,
@@ -21,6 +23,7 @@
         "github": "https://github.com/ClayData/workout-buddy",
         "description": "Create your own quick at home workouts and work up a sweat with Workout-Buddy",
         "site": "https://workout-bud.herokuapp.com/signin",
-        "image": "https://github.com/ClayData/workout-buddy/blob/master/screenShotWorkout.png?raw=true"
+        "image": "https://github.com/ClayData/workout-buddy/blob/master/screenShotWorkout.png?raw=true",
+        "tech": ["React", "Material-Ui", "MongoDB", "Mongoose", "Passport.js", "Node", "Express"]
     }
 ]

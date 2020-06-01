@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    fontFamily: 'Roboto'
   },
 }));
 
@@ -50,7 +51,15 @@ export default function Popout(props) {
         <Fade in={open}>
           <div className={classes.paper}>
             <h2>{props.name}</h2>
-            <p>react-transition-group animates me.</p>
+            <ul>
+              {props.tech.map((item) => {
+                return(
+                  <li>
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
             <Button href={props.github}>GitHub</Button>
             <Button href={props.site}>LiveSite</Button>
           </div>
